@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D Box with Axes</title>
+    <style>
+        .scene {
+            width: 300px;
+            height: 300px;
+            perspective: 800px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .z {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transform: rotateZ(90deg);
+            border: 2px solid black;
+        }
+
+        .x {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transform: rotateX(45deg);
+            border: 2px solid black;
+            position: absolute;
+        }
+
+        .y {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transform: rotateY(45deg);
+            border: 2px solid black;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>X and Y Rotated Boxes Inside Scene</h2>
+<div class="scene">
+    <div class="x x-axis">X-axis Box (rotateX)</div>
+    
+    <div class="y y-axis">Y-axis Box (rotateY)</div>
+</div>
+
+<h2>Z Rotated Box (Outside Scene)</h2>
+<div class="z">Z-axis Box (rotateZ)</div>
+
+<!-- x along x axis ,y is along y axis z is normal rotaion do no depth required -->
+
+</body>
+</html>

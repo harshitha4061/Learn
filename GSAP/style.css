@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'gilroy';
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+/* div{
+    width:100px;
+    height:100px;
+    background-color: red;
+} */
+/* h1{
+    font-family: "Electrolize", serif;
+    font-size: 100px;
+} */
+p{
+    font-size: 500px;
+
+}
+p::selection {
+    background-color: red;
+    color: white;
+}
+
+.a{
+    width: 100%;
+    height:100%;
+    background-color: black;
+    color: aliceblue;
+    overflow-x:hidden;
+}
+.b{
+    width: 100%;
+    height:100%;
+}
+.cursor{
+    background-color: aquamarine;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    position:fixed; 
+    pointer-events: none; 
+    /* fixed */
+}
+.nav {
+    background-color: rgb(178, 216, 252);
+    width: 30%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    right: -30%; /* Start off-screen */
+    overflow-x: hidden;
+    z-index: 1000;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 30px 50px;
+    margin: 0;
+}
+
+i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.ri-menu-line {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+
+}
+
+.ri-close-line {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.full {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    white-space: nowrap;
+    overflow: hidden;
+}

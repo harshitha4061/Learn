@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3D Translate Example</title>
+    <style>
+        .scene {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 500px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            transform: translate3d(50px, 50px, 100px);
+            /* in x,y,z translate an element along the Z-axis (into or out of the screen)  */
+            /* translateX,translateY,translateZ  */
+        }
+
+        .flat-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(50px, 50px); 
+            /* add both x and y transulate */
+            /* we can have negative values also for opposite direction  */
+        }
+    </style>
+</head>
+<body>
+
+<div class="scene">
+    <div class="box">3D</div>
+    <div class="flat-box">2D</div>
+</div>
+
+<!-- translateX()	transform: translateX(50px);	Moves element horizontally (left or right). Positive moves right, negative left.
+translateY()	transform: translateY(-30px);	Moves element vertically (up or down). Positive moves down, negative up.
+translateZ()	transform: translateZ(100px);	Moves element forward/backward in 3D space. Positive moves toward viewer, negative moves away. Requires perspective.
+translate()	transform: translate(50px, 100px);	Moves element in 2D space (X and Y). First value is X, second is Y.
+translate3d()	transform: translate3d(50px, 100px, 200px);	Moves element in 3D space — X (horizontal), Y (vertical), Z (depth). Requires perspective to see depth effect. -->
+
+
+
+<!-- to see effects of z we need perspective 
+.parent {
+    perspective: 500px;
+}
+.child {
+    transform: translateZ(200px);
+} -->
+
+</body>
+</html>

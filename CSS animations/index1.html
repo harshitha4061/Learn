@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scale Examples</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            background-color: coral;
+            color: white;
+            font-weight: bold;
+        }
+
+        .scale-1 {
+            transform: scale(1); /* No scaling (original size) */
+        }
+
+        .scale-2 {
+            transform: scale(1.5); /* 1.5x larger */
+        }
+
+        .scale-x {
+            transform: scaleX(2); /* Stretch horizontally */
+        }
+
+        .scale-y {
+            transform: scaleY(0.5); /* Shrink vertically */
+        }
+
+        .scale-3d {
+            transform: scale3d(1.5, 1.2, 1); /* 3D scale */
+            /* This scales X by 1.5, Y by 1.2, and Z (depth) by 1. */
+            /* Has no visible effect — CSS elements have no depth or thickness. */
+        }
+    </style>
+</head>
+<body>
+
+<div class="box scale-1">Original</div>
+<br/>
+<div class="box scale-2">Scale 1.5</div>
+<br/>
+<div class="box scale-x">ScaleX 2</div>
+<br/>
+<div class="box scale-y">ScaleY 0.5</div>
+<br/>
+<div class="box scale-3d">Scale3D</div>
+
+
+<!-- scale()	--- Uniformly scales both width & height
+scaleX() 	---	Scales only the width
+scaleY() 	---	Scales only the height
+scale3d(x, y, z)   ---	Scales in 3D (X, Y, Z axes) -->
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Separate ScaleX and ScaleY Animations</title>
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background: coral;
+
+      /* Two separate animations */
+      /* animation chaining  */
+      animation: 
+        scaleXChange 10s linear forwards,
+        scaleYChange 2s 1s linear forwards;
+    }
+
+    /* Horizontal scaling */
+    @keyframes scaleXChange {
+      0% {
+        transform: scaleX(1);
+      }
+      50% {
+        transform: scaleX(5);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+
+    /* Vertical scaling (starts after 1s) */
+    @keyframes scaleYChange {
+      0% {
+        transform: scaleY(1);
+      }
+      50% {
+        transform: scaleY(5);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <title>ScaleX and ScaleY Together</title>
+   <style>
+     .box {
+       width: 50px;
+       height: 50px;
+       background: coral;
+ 
+       animation: scaleXYChange 5s linear forwards;
+     }
+ 
+     @keyframes scaleXYChange {
+       0% {
+         transform: scaleX(1) scaleY(1);
+       }
+       50% {
+         transform: scaleX(3) scaleY(3);
+       }
+       100% {
+         transform: scaleX(1) scaleY(1);
+       }
+     }
+   </style>
+ </head>
+ <body>
+ 
+ <div class="box"></div>
+ 
+ </body>
+ </html>
+ 

@@ -1,0 +1,82 @@
+.box{
+  background-color: red;
+  width:100px;
+  height: 100px;
+  border:solid 2px black;
+}
+
+/* General Container */
+.motion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Scroll Progress Bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #ff4081;
+  transform-origin: left;
+}
+
+/* Title Styling */
+.motion-title {
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.motion-title:hover {
+  transform: scale(1.1);
+  color: #ff4081;
+}
+
+/* Staggered Buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.motion-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.motion-button:hover {
+  background-color: #0056b3;
+}
+
+/* Draggable & Hoverable Boxes */
+.box-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.motion-box {
+  width: 80px;
+  height: 80px;
+  background-color: #28a745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.motion-box:active {
+  cursor: grabbing;
+}

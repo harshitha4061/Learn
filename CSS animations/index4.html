@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mario & Luigi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .mario {
+            position: absolute;
+            top: -40px;
+            left: 0px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation-name: drive;
+            animation-duration: 3s;
+            animation-name: 1s;
+            animation-fill-mode: both;
+            /* forward,backward,both  */
+            animation-iteration-count: infinite;
+            /* no of times  */
+            animation-timing-function: cubic-bezier(0, .77, 1, .28);
+            /* ease,easi-in,ease-out,ease-in-out,linear  */
+            /* animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode]; */
+
+        }
+
+        .luigi {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            animation-name: drive;
+            animation-duration: 5s;
+            animation-name: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            /* reverse ,normal,alternate,alternate-reverse  */
+        }
+
+        @keyframes drive {
+            from {
+                transform: translateX(-200px);
+            }
+
+            to {
+                transform: translateX(1000px);
+            }
+        }
+        /* 0%,10%,20%  */
+    </style>
+</head>
+
+<body>
+
+    <div class="mario"></div>
+    <div class="luigi"></div>
+
+</body>
+
+</html>

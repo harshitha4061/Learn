@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hover Me Circle Button</title>
+    <style>
+        .circle {
+            width: 100px;
+            padding: 50px 0;
+            line-height: 0;
+            margin: 60px auto;
+            background: pink;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 1s, transform 1s ease;
+            /* durwation delay effect  */
+        }
+
+        .circle:hover {
+            background: salmon;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="circle">Hover Me</div>
+
+
+<!-- linear	-- Constant speed — no acceleration or deceleration.
+ease --	Slow start, fast middle, slow end.
+ease-in --	Slow start, speeds up at the end.
+ease-out --	Fast start, slows down at the end.
+ease-in-out --	Slow start, fast middle, slow end (more balanced than ease). -->
+
+</body>
+</html>
